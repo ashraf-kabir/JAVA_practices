@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Apples{
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        Tuna tunaobj = new Tuna();
+        
+        System.out.println("Enter your first gf's name: ");
+        String temp = sc.nextLine();
+        
+        tunaobj.setName(temp);
+        tunaobj.saying();
+    }
+}

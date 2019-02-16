@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class CP5T5{
+  public static void main(String [] args){
+    
+    Scanner sc=new Scanner(System.in);
+    
+    int num[] = new int[5];
+    
+    int sum=0;
+    
+    for (int a=0; a<num.length; a++){
+      System.out.println("Enter number:");
+      num[a] = sc.nextInt();
+    }
+    for (int b=0; b<num.length; b++){
+      sum+=num[b];
+    }
+    double avg = sum/num.length;
+    int count=0;
+    
+    for (int d=0; d<num.length; d++){
+      if (num[d]>avg){
+        count++;
+      }
+    }
+    System.out.println(count + " students are better than average");
+    
+    for (int e=0; e<num.length; e++){
+      if (num[e]>avg){
+        System.out.println("They have got "+num[e]);
+      }
+    }
+  }
+}

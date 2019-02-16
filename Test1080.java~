@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Test1080{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    
+    int i,count=0,input,max=0,position;
+    for(i=1;i<=100;i++){
+      int input=sc.nextInt();  
+      if(max<input){
+        max=input;
+        position=i;  
+      }
+    }
+    System.out.format("%d\n%d\n",max,position);
+  }
+}

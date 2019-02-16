@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class L7T14{
+  public static void main(String[] args){
+    
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter row's value:");
+    int row = sc.nextInt();
+    
+    System.out.println("Enter coloumn's value:");
+    int coloumn = sc.nextInt();
+    
+    for(int rowCount=1; rowCount<=row; rowCount++){
+      for(int colCount=1; colCount<=coloumn; colCount++){
+    
+       if (rowCount==1 || rowCount==row || colCount==1 || colCount==coloumn){
+      System.out.print("*");
+    }
+    else{
+      System.out.print(" ");
+    }
+      }
+      System.out.println();
+    }
+    
+  }
+}

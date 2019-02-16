@@ -1,0 +1,25 @@
+public class Dog{
+  
+  private String color = "Black";
+  private String action = "";
+  
+  void setColor(String x){
+    color  = x;
+  }
+  
+  String setColor(){
+    return color;
+  }
+  
+  void setAction(String y){
+    action = y;
+  }
+  
+  String getAction(){
+    return action;
+  }
+  
+  void printDog(){
+    System.out.println(getColor()+" is "+getAction());
+  }
+}

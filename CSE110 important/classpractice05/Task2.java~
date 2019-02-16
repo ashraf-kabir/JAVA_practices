@@ -1,0 +1,24 @@
+package classpractice05;
+
+import java.util.Scanner;
+
+public class Task2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		int num[] = new int[10];
+		
+		for (int a=0; a<num.length; a++){
+			System.out.println("Eneter number:");
+			num[a]= sc.nextInt();
+		}
+		
+		for (int b=num.length-1; b>=0; b--){
+			System.out.println(num[b]);
+		}
+	}
+
+}

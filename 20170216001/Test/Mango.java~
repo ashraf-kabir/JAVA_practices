@@ -1,0 +1,13 @@
+public class Mango{
+  
+  
+  public Mango(boolen flag,String name){
+    super(flag,name);
+  }
+  
+  public String toString(){
+    return "Mangos are bad for you";
+    
+  }
+  
+}

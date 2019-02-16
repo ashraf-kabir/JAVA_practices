@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Task1072 {
+  public static void main(String[] args) throws IOException { 
+    int in = 0, out = 0;
+    //int interval_start =10,interval_end =20;
+    Scanner input =new Scanner(System.in);
+    
+    int n =input.nextInt();
+    
+    for (int i=1; i<=n; i++) {
+      int x =input.nextInt();
+      if (x>=10 && x<=20) {
+        in+=1;
+   }
+      else {
+        out += 1;
+      }
+    }
+    System.out.print(in+" in\n"+out +" out\n");
+  }
+}

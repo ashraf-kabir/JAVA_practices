@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Test1049{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    
+    String x=sc.nextLine();
+    
+    if(x=="vertebrado"){
+      String a=sc.nextLine();
+      if(a=="ave"){
+        String b=sc.nextLine();
+        if(b=="carnivoro"){
+          System.out.println("aguia");
+        }
+        else if(b=="onivoro"){
+          System.out.println("pomba");
+        }
+      }
+      else if(a=="mamifero"){
+        String c=sc.nextLine();
+        if(c=="onivoro"){
+          System.out.println("homem");
+        }
+        else if(c=="herbivoro"){
+          System.out.println("vaca");
+        }
+      }
+    }
+    
+    else if(x=="invertebrado"){
+      String d=sc.nextLine();
+      if(d=="inseto"){
+        String e=sc.nextLine();
+        if(e=="hematofago"){
+          System.out.println("pulga");
+        }
+        else if(e=="herbivoro"){
+          System.out.println("lagarta");
+        }
+      }
+      else if(d=="anelideo"){
+        String f=sc.nextLine();
+        if(f=="hematofago"){
+          System.out.println("sanguessuga");
+        }
+        else if(f=="onivoro"){
+          System.out.println("minhoca");
+        }
+      }
+    }
+  }
+}
+  

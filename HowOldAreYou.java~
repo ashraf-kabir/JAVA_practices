@@ -1,0 +1,68 @@
+import java.util.Scanner;
+public class HowOldAreYou {
+  
+  public static void main (String[] args) {
+        
+    Scanner sc = new Scanner (System.in);
+    
+    System.out.println("Please enter your birth year: ");
+    int birthYear = sc.nextInt();
+    System.out.println("Please enter your birth month: ");
+    int birthMonth = sc.nextInt();
+    System.out.println("Please enter your birth day: ");
+    int birthDay = sc.nextInt();
+    System.out.println("Please enter current year: ");
+    int currentYear = sc.nextInt();
+    System.out.println("Please enter current month: ");
+    int currentMonth = sc.nextInt();
+    System.out.println("Please enter current day: ");
+    int currentDay = sc.nextInt();
+    
+    int yearCount = 0;
+    int monthCount = 0;
+    int dayCount = 0;
+    
+    if (birthDay<currentDay) {      
+      dayCount=currentDay-birthDay;      
+      monthCount++;
+    }
+    
+    else if (birthDay>currentDay) {
+      if ((currentMonth==1)||(currentMonth==3)||(currentMonth==5)||(currentMonth==7)||(currentMonth==8)||(currentMonth==10)||(currentMonth==12)) {     
+        dayCount = 31-(birthDay-currentDay);      
+      }
+      
+      else if ((currentMonth==2)&&(currentMonth%4==0)) {
+                
+        dayCount = 29-(birthDay-currentDay);
+        }
+        
+      else if ((currentMonth==2)&&(currentMonth%4!=0)) {        
+        dayCount = 28-(birthDay-currentDay);     
+      }
+      
+      else {        
+        dayCount = 30-(birthDay-currentDay);      
+      }    
+    }
+    
+    if (birthMonth<currentMonth) {      
+      monthCount = currentMonth-birthMonth;
+      yearCount++;  
+    }
+    
+    else if (birthMonth>currentMonth) {      
+      monthCount = 12-(birthMonth-currentMonth);    
+    }
+    
+    if (birthMonth>currentMonth) {      
+      yearCount = currentYear-birthYear-1;
+        
+    }
+    else {
+      yearCount = currentYear-birthYear;  
+    }    
+    System.out.print("Your age between that range is: "+yearCount+" year, "+monthCount+" month, "+dayCount+" day");
+    System.out.println();
+  }
+}

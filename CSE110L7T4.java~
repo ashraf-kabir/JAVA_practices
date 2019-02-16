@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CSE110L7T4{
+  public static void main(String args[]){
+    Scanner sc=new Scanne(System.in);
+    
+    int row=sc.nextInt();
+    int col=sc.nextInt();
+    
+    for(int rowC=1; row<=row; rowC++){
+      for(int colC=1; colC<=ol; colC++){
+        System.out.print(rowC);
+      }
+      System.out.println();
+    }
+  }
+}

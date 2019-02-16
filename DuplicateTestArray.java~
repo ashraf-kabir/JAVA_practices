@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DuplicateTestArray{
+public static int[] userLottoInput()
+{
+    int[] userNums = new int[6];        
+    Scanner keyboard = new Scanner(System.in);
+
+    for (int i = 0; i < userNums.length; i++ ) {
+        System.out.printf("Enter Lottery number %d: ", i + 1);
+        userNums[i] = keyboard.nextInt();
+
+        for (int k=i; k<userNums.length; k++)  {
+            while (k!=i && userNums[k] == userNums[i])  {
+                System.out.printf("if");
+                System.out.printf("Error! Try again: ");
+                userNums[i] = keyboard.nextInt();
+            }
+        }
+    }
+}
+}

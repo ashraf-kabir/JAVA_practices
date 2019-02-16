@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CSE110L8T11{
+  public static void main(String args[]){
+    
+    Scanner sc=new Scanner(System.in);
+    
+    int num[]=new int[10];
+    
+    System.out.printn("Enter number 1");
+    num[0]=sc.nextInt();
+    
+    for(int a=1; a<num.length; a++){
+      System.out.println("Enter number"+(a+1));
+      num[a]=sc.nextInt();
+      for(int b=0; b<a; b++){
+        if(num[a]==num[b]){
+          System.out.println("You can't input the same number twice....... Please enter again the last number");
+          a--;
+        }
+      }
+    }
+    for(int a=0; a<num.length; a++){
+      System.out.println(num[a]);
+    }
+  }
+}

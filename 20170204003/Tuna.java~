@@ -1,0 +1,19 @@
+public class Tuna{
+  private String girlName;
+  
+  public void Tuna(String name){
+    girlName=name;
+  }
+  
+  public void setName(String name){
+    girlName = name;
+  }
+  
+  public String getName(){
+    return(girlName);
+  }
+  
+  public void saying(){
+    Systrm.out.format("Your first gf was %s\n", getName());
+  }
+}

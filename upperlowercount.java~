@@ -1,0 +1,15 @@
+//alphabet count lower or uppercase
+
+import java.util.*;
+public class upperlowercount {
+  public static void main(String[] args) {
+    
+    Scanner sc= new Scanner(System.in);
+    
+    System.out.println("Enter a word");
+    String x = sc.nextLine();
+    
+    int m = input.length();
+    
+  }
+}

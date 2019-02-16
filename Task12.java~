@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Task12 {
+
+ public static void main(String[] args) {
+  
+  double x=Math.PI;
+  
+  System.out.printf("%lf",x);
+  
+  
+ }
+
+}

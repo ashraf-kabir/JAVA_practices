@@ -1,0 +1,12 @@
+public class MyRobotTester{
+  public static void main(String[] args){
+    
+    MyRobot r=new MyRobot();
+    
+    r.name="WALLE";
+    r.model=2007;
+    
+    System.out.println(r.name);
+    System.out.println(r.model);
+  }
+}

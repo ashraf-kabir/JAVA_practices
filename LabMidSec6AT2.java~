@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class LabMidSec6AT2 {
+  public static void main(String[] args){
+    
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter number:");
+    int r=sc.nextInt();
+    
+    System.out.println("Enter number:");
+    int n=sc.nextInt();
+    int sum=0;
+    
+    for (c=1; c<n; c++) {
+      sum+=c;
+    }
+    double d = Math.pow(c,r);
+    
+    System.out.println(d);
+  }
+}

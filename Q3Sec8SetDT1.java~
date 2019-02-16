@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Q3Sec8SetDT1 {
+  public static void main(String[] args) {
+    
+    Scanner sc=new Scanner(System.in);
+
+    for (int a=1; a<=10; a++) {
+      System.out.println("Enter number:");
+      int x=sc.nextInt();
+      int c=0;
+      if (x>0 && x<=49) {
+        c++;
+        System.out.println(c);
+      }
+    }
+    
+    
+  }
+}

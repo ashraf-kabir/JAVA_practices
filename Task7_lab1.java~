@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Task7_lab1{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int[]array=new int[11];
+        int count=0;
+        
+        for(int index1=0;index1<array.length;index1++){
+            System.out.println("Enter a number");
+             array[index1]=sc.nextInt();
+       for(int index2=0;index2<1;index2++){ 
+           if(array[index2]== array[index1]){
+               count++;
+               
+               if(count==5){
+               System.out.println("Don't enter the same number please");
+               index1--;
+               count=0;
+              
+           }
+           }
+              else{
+                  continue;
+              }
+              }
+}
+}
+}
