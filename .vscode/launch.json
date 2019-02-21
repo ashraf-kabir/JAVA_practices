@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordCount",
+            "request": "launch",
+            "mainClass": "WordCount"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CP5T2",
+            "request": "launch",
+            "mainClass": "CP5T2"
+        }
+    ]
+}
