@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Test1146",
+            "request": "launch",
+            "mainClass": "Test1146",
+            "projectName": "JAVA_practices_8e5fdb72"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Vabna",
             "request": "launch",
             "mainClass": "Vabna",
