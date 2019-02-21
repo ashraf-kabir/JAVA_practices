@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Vabna",
+            "request": "launch",
+            "mainClass": "Vabna",
+            "projectName": "JAVA_practices_8e5fdb72"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WordCount",
             "request": "launch",
             "mainClass": "WordCount"
