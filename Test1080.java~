@@ -4,14 +4,14 @@ public class Test1080{
   public static void main(String[] args){
     Scanner sc=new Scanner(System.in);
     
-    int i,count=0,input,max=0,position;
-    for(i=1;i<=100;i++){
-      int input=sc.nextInt();  
-      if(max<input){
-        max=input;
-        position=i;  
+    int max=0,Loc=0;
+    for(int c=1; c<=100; c++){
+      int a=sc.nextInt();  
+      if(max<a){
+        max=a;
+        Loc=c;  
       }
     }
-    System.out.format("%d\n%d\n",max,position);
+    System.out.format("%d\n%d\n",max,Loc);
   }
 }
