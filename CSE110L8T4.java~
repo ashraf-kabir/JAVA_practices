@@ -17,9 +17,8 @@ public class CSE110L8T4{
         System.out.println("The first odd number is: "+num[b]);
         break;
       }
-      else{
-        System.out.println("There is no odd number.");
-        break;
+      else if(b==num.length-1){
+        System.out.println("No odd number.");
       }
     }
   }

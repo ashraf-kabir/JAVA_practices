@@ -9,8 +9,9 @@ public class CSE110L7T3{
     
     for(int rowC=1; rowC<=row; rowC++){
       for(int colC=1; colC<=col; colC++){
-        System.out.println("*");
+        System.out.print("*");
       }
+      System.out.println();
     }
   }
 }
