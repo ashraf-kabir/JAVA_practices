@@ -7,11 +7,14 @@ public class Three56 {
     System.out.println("Enter your birth year:");
     int birthYear = sc.nextInt();
     
-    int count=0;
+    System.out.println("Enter your birth month:");
+    int birthMonth = sc.nextInt();
+    
+    int countY=0;
     for (; birthYear<=2016; birthYear++) {
-      count++;
+      countY++;
     }
-    System.out.print(count + " years");
+    System.out.print(countY + " years");
     System.out.println();
   }
 }
