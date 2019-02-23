@@ -4,9 +4,9 @@ import java.util.*;
 
 public class Slytherin{
     
-    public static void Slytherin(BigInteger a, BigInteger b, long i, long n){
+    public static void Slytherin(BigInteger a, BigInteger b, long i, long n) {
         System.out.print(a + " ");
-        if(i < n){
+        if(i < n) {
             Slytherin(b, b.multiply(a), ++i, n);
         }
     }
