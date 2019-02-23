@@ -17,7 +17,7 @@ public class Slytherin{
         BigInteger b = new BigInteger("2");
         Scanner sc = new Scanner(System.in);
         long n;
-        System.out.print("Enter the range of Slytherin series: ");
+        System.out.println("Enter the range of Slytherin series: ");
         n = sc.nextLong();
         Slytherin(a,b,1,n);
         sc.close();

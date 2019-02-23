@@ -1,25 +1,25 @@
 import java.util.Scanner;
-public class Taskmornin{
-  public static void main(String[] args) {
+import java.math.*;
+import java.util.*;
+
+public class Slytherin{
     
-    Scanner sc=new Scanner(System.in);
+    public static void Slytherin(BigInteger a, BigInteger b, long i, long n){
+        System.out.print(a + " ");
+        if(i < n){
+            Slytherin(b, b.multiply(a), ++i, n);
+        }
+    }
     
-    System.out.println("Enter range:");
-    int r=sc.nextInt();
-    
-    for(int c=1; c<=r; c++) {
-      System.out.println("Enter marks:");
-      int n = sc.nextInt();
+    public static void main(String[] args) {
+        
+        BigInteger a = new BigInteger("1");
+        BigInteger b = new BigInteger("2");
+        Scanner sc = new Scanner(System.in);
+        long n;
+        System.out.print("Enter the range of Slytherin series: ");
+        n = sc.nextLong();
+        Slytherin(a,b,1,n);
+        sc.close();
     }
-    int failC=0;
-    if (n>=0 && n<=49) {
-      failC++;
-      System.out.println(failC);
-    }
-    int passC=0;
-    if (n>=50 && n<=100) {
-      passC++;
-      System.out.println(passC);
-    }
-  }
 }
