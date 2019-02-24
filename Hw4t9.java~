@@ -8,20 +8,19 @@ public class Hw4t9 {
   Scanner sc = new Scanner(System.in);
   
   System.out.println("Enter row:");
-  int row = sc.nextInt();
+  int a = sc.nextInt();
   
-     int j =1;
-     for(int r = 1 ;r<=row;r++){
+     int b =1;
+     
+     for(int rowCount=1; rowCount<=a; rowCount++){
        //while row is increasing space is decreasing
-       for(int space = 0;space<row-r;space++){
+       for(int space=0; space<a-rowCount; space++){
        System.out.print(" ");
        }
-       for(int c=1;c<=j;c++){
+       for(int star=1; star<=b; star++){
        System.out.print("*");
-  
      }
-             j+=2;
-  
+             b+=2;
      System.out.println();
      }
  }
