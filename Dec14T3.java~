@@ -13,6 +13,6 @@ public class Dec14T3{
     
     double area = height * width;
     
-    System.out.println(area);
+    System.out.println("The area of rectangle is: "+area);
   }
 }
