@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
 public class DuplicateTestArray{
-public static void main(String[] args) {
-    int[] userNums = new int[6];
-    Scanner keyboard = new Scanner(System.in);
-
-    //int i = 0;
-    // Keep looping until we fill the array, but
-    // allow the control to fall somewhere else
-    fo(int i=0; i<userNums.length; i++){
-      System.out.println("Enter number: ");
-      userNums[i] = keyboard.nextInt();
-    }    
-    //while (i < userNums.length) {
+    public static void main(String[] args) {
+        int[] userNums = new int[6];
+        Scanner keyboard = new Scanner(System.in);
+        
+        //int i = 0;
+        // Keep looping until we fill the array, but
+        // allow the control to fall somewhere else
+        fo(int i=0; i<userNums.length; i++){
+            System.out.println("Enter number: ");
+            userNums[i] = keyboard.nextInt();
+        }    
+        //while (i < userNums.length) {
         //System.out.printf("Enter Lottery number %d: ", i + 1);
         //userNums[i] = keyboard.nextInt();
-
+        
         // Check for duplicates
         boolean duplicate = false;
         // We only need to check up to i - 1, as all the
@@ -30,7 +30,7 @@ public static void main(String[] args) {
                 break;
             }
         }
-
+        
         // If no duplicates where found, update i to the next position
         if (!duplicate) {
             i++;

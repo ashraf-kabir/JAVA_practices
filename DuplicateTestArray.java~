@@ -1,22 +1,40 @@
 import java.util.Scanner;
 
 public class DuplicateTestArray{
-public static int[] userLottoInput()
-{
-    int[] userNums = new int[6];        
+public static void main(String[] args) {
+    int[] userNums = new int[6];
     Scanner keyboard = new Scanner(System.in);
 
-    for (int i = 0; i < userNums.length; i++ ) {
-        System.out.printf("Enter Lottery number %d: ", i + 1);
-        userNums[i] = keyboard.nextInt();
+    //int i = 0;
+    // Keep looping until we fill the array, but
+    // allow the control to fall somewhere else
+    fo(int i=0; i<userNums.length; i++){
+      System.out.println("Enter number: ");
+      userNums[i] = keyboard.nextInt();
+    }    
+    //while (i < userNums.length) {
+        //System.out.printf("Enter Lottery number %d: ", i + 1);
+        //userNums[i] = keyboard.nextInt();
 
-        for (int k=i; k<userNums.length; k++)  {
-            while (k!=i && userNums[k] == userNums[i])  {
-                System.out.printf("if");
-                System.out.printf("Error! Try again: ");
-                userNums[i] = keyboard.nextInt();
+        // Check for duplicates
+        boolean duplicate = false;
+        // We only need to check up to i - 1, as all the
+        // other values are defaulted to 0
+        // We also don't need to check for the last number entered ;)
+        for (int k = 0; k < i; k++) {
+            // Check for duplicated
+            if (userNums[k] == userNums[i]) {
+                System.out.println("No duplicates allowed, please try again");
+                duplicate = true;
+                // Break out of the loop as we don't need to check any more..
+                break;
             }
         }
+
+        // If no duplicates where found, update i to the next position
+        if (!duplicate) {
+            i++;
+        }            
     }
-}
+    //return userNums;
 }
