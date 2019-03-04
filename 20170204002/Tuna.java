@@ -1,11 +1,11 @@
-public class Tuna{
+public class Tuna {
     private String girlName;
     
-    public void setName(String name){
+    public void setName(String name) {
         girlName=name;
     }
     
-    public String getName(){
+    public String getName() {
         return(girlName);
     }
     
