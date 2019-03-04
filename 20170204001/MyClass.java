@@ -1,5 +1,5 @@
-public class MyClass{
-    public static void main(String[] args){
+public class MyClass {
+    public static void main(String[] args) {
         Student s1 = new Student();       //s1 is a object
         s1.name = "Ashraf";
         s1.id = 16301034;
