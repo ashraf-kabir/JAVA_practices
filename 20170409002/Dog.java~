@@ -2,24 +2,24 @@ public class Dog{
   
   private String color = "Black";
   private String action = "";
-  
-  void setColor(String x){
-    color  = x;
+  public Dog(){
   }
-  
-  String setColor(){
+  public Dog(String name){
+    color = name;
+  }
+  public void setColor(String x){
+    color = x;
+  }
+  public String getColor(){
     return color;
   }
-  
-  void setAction(String y){
+  public void setAction(String y){
     action = y;
   }
-  
-  String getAction(){
+  public String getAction(){
     return action;
   }
-  
-  void printDog(){
+  public void printDog(){
     System.out.println(getColor()+" is "+getAction());
   }
 }
