@@ -6,13 +6,19 @@ public class Test1064{
     
     double num[]=new double[6];
     
-    int d=0;
+    int c=0;
+    double sum=0;
+    double avg=0;
     for(int a=0; a<num.length; a++){
       num[a]=sc.nextDouble();
       if(num[a]>0){
-        d++;
+        c++;
+        sum+=num[a];
       }
     }
-    System.out.println(d);
+    avg=(sum/c);
+    System.out.println(c+" valores positivos");
+    System.out.printf("%.1f", avg);
+    System.out.println();
   }
 }
