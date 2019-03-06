@@ -16,6 +16,7 @@ public class Test1064{
                 sum+=num[a];
             }
         }
+        
         avg=(sum/c);
         System.out.println(c+" valores positivos");
         System.out.printf("%.1f", avg);
