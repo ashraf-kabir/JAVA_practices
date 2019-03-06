@@ -5,14 +5,14 @@ public class Test1065{
     Scanner sc=new Scanner(System.in);
     
     int num[]= new int[5];
+    int d=0;
     
-    for(int a=1; a<num.length; a++){
+    for(int a=0; a<num.length; a++){
       num[a]=sc.nextInt();
-      int d=0;
-      if(num[a] %2==0){
+      if(num[a]%2==0){
         d++;
       }
-      System.out.println(d);
     }
+    System.out.println(d+" valores pares");
   }
 }
