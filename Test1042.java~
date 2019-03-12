@@ -3,30 +3,37 @@ import java.util.Scanner;
 public class Test1042{
   public static void main(String[] args){
     Scanner sc=new Scanner(System.in);
-    int temp=0;
-    int n[]=new int[3];
     
-    for(int a=0; a<n.length; a++){
-      n[a]=sc.nextInt();
-    }
-    int tempb=n[0];
-    for(int e=0; e<n.length; e++){
-      //System.out.println(n[e]);
-      tempb=n[e];
-    }
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
     
-    for(int a=0; a<n.length; a++){
-      for(int b=0; b<n.length; b++){
-        if(n[b]>n[a]){
-          temp=n[a];
-          n[a]=n[b];
-          n[b]=temp;
-        }
+    if(a<b && a<c){
+      if(b<c){
+        System.out.printf("%d\n%d\n%d\n",a,b,c);
+      }
+      else {
+        System.out.printf("%d\n%d\n%d\n",a,c,b);
       }
     }
-    for(int d=0; d<n.length; d++){
-      System.out.println(n[d]);
+    
+    if(b<a && b<c){
+      if(a<c){
+        System.out.printf("%d\n%d\n%d\n",b,a,c);
+      }
+      else {
+        System.out.printf("%d\n%d\n%d\n",b,c,a);
+      }
     }
-    System.out.println(tempb);
+    
+    if(c<b && c<a){
+      if(b<a){
+        System.out.printf("%d\n%d\n%d\n",c,b,a);
+      }
+      else {
+        System.out.printf("%d\n%d\n%d\n",c,a,b);
+      }
+    }
+    System.out.printf("\n%d\n%d\n%d\n",a,b,c);
   }
 }
