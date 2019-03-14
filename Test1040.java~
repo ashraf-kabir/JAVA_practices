@@ -9,10 +9,8 @@ public class Test1040{
     double c=sc.nextDouble();
     double d=sc.nextDouble();
     
-    double avg=(a*2.0+b*3.0+c*4.0+d*1.0)/10.0;
-    System.out.print("Media: ");
-    System.out.printf("%.1f", avg);
-    System.out.println();
+    double avg=(a*2+b*3+c*4+d*1)/10.0;
+    System.out.printf("Media: %.1f\n", avg);
     
     if(avg>=7.0){
       System.out.println("Aluno aprovado.");
@@ -30,12 +28,10 @@ public class Test1040{
       if(favg >=5.0){
         System.out.println("Aluno aprovado.");
       }
-      else if(favg<=4.9){
+      else{
         System.out.println("Aluno reprovado.");
       }
-      System.out.print("Media final: ");
-      System.out.printf("%.1f", favg);
-      System.out.println();
+      System.out.printf("Media final: %.1f\n", favg);
     }
   }
 }
