@@ -7,9 +7,10 @@ public class Test1017{
     int x=sc.nextInt();
     int y=sc.nextInt();
     
-    double p=(1*y)/12;
+    double p=(1.0*y)/12.0;
     double q=(x*p);
     
     System.out.printf("%.3f",q);
+    System.out.println();
   }
 }
