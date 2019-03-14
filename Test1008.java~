@@ -11,6 +11,8 @@ public class Test1008{
     double x=b*c;
     
     System.out.println("NUMBER = "+a);
-    System.out.println("SALARY = U$ "+x);
+    System.out.print("SALARY = U$ ");
+    System.out.printf("%.2f", x);
+    System.out.println();
   }
 }
