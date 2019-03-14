@@ -8,11 +8,11 @@ public class Test1044{
     int b=sc.nextInt();
     
     if(a%b==0||b%a==0){
-      System.out.println("Sao Multiplos\n");
+      System.out.println("Sao Multiplos");
     }
     
     else{
-      System.out.println("Nao sao Multiplos\n");
+      System.out.println("Nao sao Multiplos");
     }
   }
 }
