@@ -13,10 +13,10 @@ public class Test1010{
     int qB=sc.nextInt();
     double aB=sc.nextDouble();
     
-    double pay =(qA*aA)+(qB*aB);
+    double pay =(double)qA*aA+(double)qB*aB;
     
     System.out.print("VALOR A PAGAR: R$ ");
     System.out.printf("%.2f", pay);
-    System.out.printkn();
+    System.out.println();
   }
 }
