@@ -6,18 +6,18 @@ public class Test1021{
     
     double z=sc.nextDouble();
     
-    double a=z/100.00;
-    double b=z%100.00;
-    double c=b/50.00;
-    double d=b%50.00;
-    double e=d/20.00;
-    double f=d%20.00;
-    double g=f/10.00;
-    double h=f%10.00;
-    double i=h/5.00;
-    double j=h%5.00;
-    double k=j/2.00;
-    double l=j%2.00;
+    double a=z/100;
+    double b=z%100;
+    double c=b/50;
+    double d=b%50;
+    double e=d/20;
+    double f=d%20;
+    double g=f/10;
+    double h=f%10;
+    double i=h/5;
+    double j=h%5;
+    double k=j/2;
+    double l=j%2;
     
     double m=l/1.00;
     double n=l%1.00;
