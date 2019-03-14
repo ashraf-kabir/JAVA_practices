@@ -14,8 +14,9 @@ public class Test1015{
     double q=(y2-y1);
     double s=q*q;
     
-    double z-r+s;
+    double z=r+s;
     
     System.out.printf("%.4f",Math.sqrt(z));
+    System.out.println();
   }
 }
