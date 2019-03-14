@@ -1,20 +1,15 @@
-import java.io.IOException;
+import java.util.Scanner;
 
-public class Test00001 {
- 
-    public static void main(String[] args) throws IOException {
-        
-        Scanner sc=new Scanner(System.in);
-        
-        System.out.println("Enter a number:");
-        int A=sc.nextInt();
-        
-        System.out.println("Enter a number:");
-        int B=sc.nextInt();
-        
-        int X=A+B;
-        
-        System.out.println("X = "+X);
-    }
- 
+public class Test00002{
+  public static void main(String args[]){
+    
+    Scanner sc=new Scanner(System.in);
+    
+    System.out.println("Enter radius");
+    double R=sc.nextDouble();
+    
+    double A= 3.14159*(R*R);
+    
+    System.out.println("A="+A);
+  }
 }

@@ -9,7 +9,6 @@ public class Test1014{
     
     double consumption= X/Y;
     
-    
     System.out.printf("%.3f",consumption);
     System.out.print(" km/l");
     System.out.println();
