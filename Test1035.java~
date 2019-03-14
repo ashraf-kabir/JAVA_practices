@@ -9,16 +9,19 @@ public class Test1035{
     int C=sc.nextInt();
     int D=sc.nextInt();
     
-    if(C>0 && D>0){
-      if(A%2==0){
-        if(B>C && D>A){
-          int X=C+D;
-          int Y=A+B;
-          if(X>Y){
-            System.out.println("Yes");
+    if(B>C && D>A){
+      int X=C+D;
+      int Y=A+B;
+      if(X>Y){
+        if(C>0 && D>0){
+          if(A%2==0){
+            System.out.println("Valores aceitos");
           }
         }
       }
+    }
+    else{
+      System.out.println("Valores nao aceitos");
     }
   }
 }
