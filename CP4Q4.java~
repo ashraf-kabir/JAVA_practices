@@ -9,7 +9,7 @@ public class CP4Q4{
     
     int sum=0;
     
-    for(c=1; c<=n; c++){
+    for(int c=1; c<=n; c++){
       sum=sum+c/2*c-1;
     }
     System.out.println(sum);
