@@ -3,7 +3,8 @@ public class CP4Q1a{
     
     
     for (int c=24; c>=0; c=c-6){
+      System.out.print(c + " ");
     }
-    System.out.println(c);
+    System.out.println();
   }
 }
