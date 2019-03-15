@@ -17,8 +17,8 @@ public class CP5T5{
       sum+=num[b];
     }
     double avg = sum/num.length;
-    int count=0;
     
+    int count=0;
     for (int d=0; d<num.length; d++){
       if (num[d]>avg){
         count++;
