@@ -1,7 +1,5 @@
-public class Quiz5a
-{
-    public static void main(String args[])
-    {
+public class Quiz5a {
+    public static void main(String args[]) {
         int [] myArray = new int[10];
         int [] b;
         int index1 = 0, index2 =0;
