@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Task22{
+    
     public static void main(String[] args){
         
         Scanner sc = new Scanner(System.in);
@@ -41,5 +42,6 @@ public class Task22{
         else{
             System.out.println("Wrong input");
         }
+        
     }
 }
