@@ -9,7 +9,8 @@ public class D17L7T1{
     int r=sc.nextInt();
     
     for(int c=1; c<=r; c++){
-      System.out.println(c);
+      System.out.print(c);
     }
+    System.out.println();
   }
 }
