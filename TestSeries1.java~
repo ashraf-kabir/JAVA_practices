@@ -12,7 +12,7 @@ public class TestSeries1{
     
     for(int a=1; a<=num; a++){
       for(int b=1; b<=a; b++){
-        dum+=Math.pow(b,2);
+        sum+=Math.pow(b,2);
       }
     }
     System.out.println(sum);

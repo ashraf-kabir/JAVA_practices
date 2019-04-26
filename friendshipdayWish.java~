@@ -7,6 +7,6 @@ public class friendshipdayWish {
     System.out.println("Enter your name:");
     String a = sc.nextLine();
     
-    System.out.println("Happy friendship day " + x);
+    System.out.println("Happy friendship day " + a);
   }
 }

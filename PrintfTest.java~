@@ -3,8 +3,8 @@ public class PrintfTest {
   public static void main(String[]args) {
     
     Scanner sc=new Scanner(System.in);
-    System.out.println("Please enter BD time");
     
+    System.out.println("Please enter BD time");
     double TBD=sc.nextDouble();
     double IndiaTime=TBD-0.70;
     double PakTime=TBD-1.00;
