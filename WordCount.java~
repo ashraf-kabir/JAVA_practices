@@ -1,16 +1,11 @@
-//enter a word and count those words
-
 import java.util.Scanner;
-public class WordCount{
-  public static void main(String[] args){
-    
-    Scanner sc = new Scanner(System.in);
-    
-    System.out.println("Enter a word:");
-    String word = sc.nextLine();
-    
-    System.out.print("Your enterred word is: "+ word);
-    System.out.println(" and it has "+ word.length() + " alphabets");
-    
-  }
+
+public class WordCount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a word:");
+        String word = sc.nextLine();
+
+        System.out.print("Your have enterred: " + word);
+    }
 }
