@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Task1159 {
+public class Task1154a {
     public static void main(String[] args) {
         int x;
         Scanner sc = new Scanner(System.in);
-        while ((x =sc.nextInt()) != 0) {
+        while ((x =sc.nextInt()) > 0) {
             int sum = 0;
             int c=1;
             for (int i=x; c<= 5; i++) {
@@ -13,7 +13,8 @@ public class Task1159 {
                     c += 1;
                 }
             }
-            System.out.print(sum+"\n");
+            
         }
+        System.out.print(sum+"\n");
     }
 }
