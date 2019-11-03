@@ -1,19 +1,24 @@
 import java.util.Scanner;
 
-public class Task1154 {
+public class Task1154a {
     public static void main(String[] args) {
-        int x;
+        
         Scanner sc = new Scanner(System.in);
-        while ((x =sc.nextInt()) != 0) {
-            int sum = 0;
-            int c=1;
-            for (int i=x; c<= 5; i++) {
-                if (i % 2 == 0) {
-                    sum += i;
-                    c += 1;
-                }
+        
+        int sum=0;
+        int c=0;
+        for (int i=0; ; i++) {
+            int x = sc.nextInt();
+            if (x>0) {
+                sum = sum + x;
+                c++;
+            } else {
+                break;
             }
-            System.out.print(sum+"\n");
         }
+        double p = c;
+        double avg = 0.0;
+        avg = sum/p;
+        System.out.printf("%.2f\n", avg);
     }
 }
